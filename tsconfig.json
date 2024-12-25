@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "outDir": "./dist",
+    "strict": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,                        /* Emit __importStar and __importDefault helpers for runtime. */
+    "forceConsistentCasingInFileNames": true,       /* Disallow inconsistently-cased references to the same file. */
+    "allowSyntheticDefaultImports": true,           /* Allow default imports from modules with no default export. */
+
+    /* Output Settings */
+    "declaration": true,                            /* Generate .d.ts files alongside JavaScript output. */
+    "declarationMap": true,                         /* Create sourcemaps for .d.ts files. */
+    "sourceMap": true,                              /* Generates corresponding .map files. */
+
+    /* Type Checking Options */
+    "noImplicitAny": true,                          /* Raise error on expressions and declarations with `any` type. */
+    "strictNullChecks": true,                       /* Enable strict null checks. */
+    "noImplicitThis": true,                         /* Raise error on `this` expressions with an implied `any` type. */
+    "alwaysStrict": true,                           /* Parse in strict mode and emit "use strict" for each source file. */
+
+    /* Advanced Options */
+    "skipLibCheck": true,                           /* Skip type checking of declaration files. */
+    "incremental": true,                            /* Enable incremental compilation. */
+    "baseUrl": ".",                                 /* Base directory to resolve non-relative module names. */
+  },
+  "include": ["src/**/*.mts"],
+  "exclude": ["node_modules", "dist"]
+}
+

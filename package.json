@@ -1,0 +1,39 @@
+{
+  "name": "sqs-pull",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Byron Warner",
+  "homepage": "https://github.com/byronwarner/sqs-pull",
+  "description": "Pull messages from an SQS queue",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byronwarner/sqs-pull.git"
+  },
+  "keywords": [
+    "aws",
+    "sqs",
+    "queue",
+    "pull",
+    "messages",
+    "nodejs"
+  ],
+  "main": "src/main.mts",
+  "bin": {
+    "sqs-pull": "./src/main.mts"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node  --no-deprecation  --import ./bootstrap.mjs src/main.mts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.716.0",
+    "@commander-js/extra-typings": "^12.1.0",
+    "@types/node": "^22.10.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
